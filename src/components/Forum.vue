@@ -26,8 +26,12 @@
 <template>
     <div class="hello">
         <h1>{{ title }}</h1>
-        <div v-for="(thread, index) in threads" :key="`thread-${index}`">
+        <div v-for="(thread, i) in threads" :key="`thread-${i}`">
             <h2>{{thread.title}}</h2>
+            <div v-for="(postId, j) in thread.posts" :key="`post-${j}`">
+                <p>{{users[posts[postId].userId].name}}</p>
+                <p>{{posts[postId].text}}</p>
+            </div>
         </div>
     </div>
 </template>
