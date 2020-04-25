@@ -1,17 +1,17 @@
 <script>
-  import HelloWorld from './components/HelloWorld.vue'
+  import Forum from './components/Forum.vue'
 
   export default {
     name: 'App',
     components: {
-      HelloWorld
+      Forum
     }
   }
 </script>
 
 <template>
   <div id="app">
-    <HelloWorld>This is a new day.</HelloWorld>
+   <Forum>Welcome to the Forum</Forum>
   </div>
 </template>
 
